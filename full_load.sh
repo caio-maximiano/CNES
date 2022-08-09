@@ -1,11 +1,8 @@
 #!/bin/bash
-#start= $1
-#echo Data inicial = $1 
-end=$(date '+%Y%m%d')
 
 start=$(date -d $1 +%Y%m%d)
-echo Data inicial = $1 
-#end=$(date -d $end +%Y%m%d)
+end=$(date '+%Y%m%d')
+echo Data inicial = $1, data final = $end
 
 while [[ $start -le $end ]]
 do
